@@ -1,0 +1,363 @@
+/* Start General Style */
+:root{
+    --main-color: #f7600e;
+    --white: #fff;
+    --overlay: rgba(49, 55, 61, .9);
+    --main-font-size: 15px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.overlay{
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--overlay);
+    width: 100%;
+    height: 100%;
+}
+/* End General Style */
+
+/* Start Header Style */
+header{
+    background: url('../img/slide-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    z-index: 0;
+    color: var(--white);
+}
+header .top-nav{
+    padding-top: 2%;
+}
+header h3 span{
+    color: var(--main-color);
+}
+header h5{
+    font-size: calc(var(--main-font-size) + 5px);
+}
+header .introduction h1{
+    margin-top: 15%;
+    font-size: calc(var(--main-font-size) + 30px);
+    margin-bottom: 2%;
+}
+header .introduction h1 span:last-of-type{
+    color: var(--main-color);
+}
+header .links{
+    margin-top: 2%;
+}
+header .links a{
+    margin:1%;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid grey;
+    padding: .5% 5% .75%;;
+    border-radius: 5px;
+    transition: .5s all ease-in-out;
+}
+header .links a:hover{
+    background-color: var(--main-color);
+}
+/* End Header Style */
+
+/* Sart Features */
+
+.features {
+    padding: 80px 0;
+}
+
+.features .box div {
+    color: var(--main-color);
+    border: 1px solid #ccc;
+    width: 130px;
+    border-radius: 50%;
+    line-height: 130px;
+    font-size: calc(var(--main-font-size) + 31px);
+    margin: auto;
+}
+
+.features .box div:hover {
+    background: var(--main-color);
+    color: #fff;
+    border: 1px solid var(--main-color);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.features .box h3 {
+    margin: 10px 0;
+    color: #444;
+}
+
+.features .box p {
+    line-height: 2;
+    color: #888;
+}
+/* End Features */
+
+/* Start Our Work */
+
+.our-work h2{
+    font-size: calc(var(--main-font-size) + 20px);
+    margin-bottom: 0;
+}
+.our-work h2 span{
+    color: var(--main-color);
+}
+.our-work h2~p{
+    line-height: 2;
+    margin: 10px 0 40px 0;
+}
+
+.our-work .item {
+    height: 330px;
+}
+
+.our-work .item img {
+    width: 100%;
+    height: 100%;
+}
+
+.our-work .item .over {
+    opacity: 0;
+    -webkit-transition: .7s ease-in-out;
+    transition: .7s ease-in-out;
+}
+
+.our-work .item:hover .over {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.our-work .item .over {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(247, 96, 14, .9);
+    color: #fff;
+    padding: 10px;
+}
+
+.our-work .item .over h4 {
+    font-size: calc(var(--main-font-size) + 9px);
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.our-work .item .over p {
+    margin-top: 30%;
+    margin-bottom: 13px;
+    line-height: 2;
+}
+a.show-more.order-service
+{
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    cursor: pointer;
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+    font-size: calc(var(--main-font-size) - 3px);
+}
+a.show-more.order-service:hover
+{
+    border: 2px solid white;
+    background: white;
+    color: #f7600e;
+}
+.our-work .item .over button {
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    cursor: pointer;
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+    font-size: cacl(var(--main-font-size) - 3px);
+}
+
+.our-work .item .over button:hover {
+    background: #fff;
+    color: #f7600e;
+    border: 1px solid #fff;
+}
+
+.our-work .show-more {
+    border: 1px solid #aaa;
+    background: #fff;
+    color: #666;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: calc(var(--main-font-size) + 1px);
+    cursor: pointer;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.our-work .show-more:hover {
+    border: 1px solid #f7600e;
+    background: #f7600e;
+    color: #fff;
+}
+/* End Our Work */
+
+/* Start Our Team */
+
+.our-team {
+    padding: 50px 0;
+}
+.our-team h2 span{
+    color: var(--main-color);
+}
+.our-team h2 {
+    font-size: calc(var(--main-font-size) + 20px);
+    margin-bottom: 10px;
+}
+
+.our-team h2~p {
+    margin: 20px 0 40px 0;
+    line-height: 2;
+    color: #666;
+    font-size: calc(var(--main-font-size) + 5px);
+}
+
+.our-team .team .person {
+    color: #888;
+}
+
+.our-team .team .person img {
+    width: 150px;
+    height: 150px;
+    -webkit-box-shadow: 0px 10px 10px #999;
+    box-shadow: 0px 10px 10px #999;
+    -webkit-filter: gray;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-transition: .6s;
+    transition: .6s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.our-team .team .person:hover img {
+    -webkit-filter: none;
+    filter: none;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.our-team .team .person:hover {
+    color: #555;
+}
+
+.our-team .team .person p {
+    font-size: calc(var(--main-font-size) - 1px);
+}
+
+.our-team .team .social-media svg {
+    background: #777;
+    margin: 0 5px;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    line-height: 30px;
+    border-radius: 50%;
+    padding: 1px;
+    cursor: pointer;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.our-team .team .person:hover .social-media svg:nth-child(1),
+.contact .icons .social-media svg:nth-child(1)
+ {
+    background: #3b5998;
+}
+
+.our-team .team .person:hover .social-media svg:nth-child(2),
+.contact .icons .social-media svg:nth-child(2)
+ {
+    background: #55acee;
+}
+
+.our-team .team .person:hover .social-media svg:nth-child(3),
+.contact .icons .social-media svg:nth-child(3)
+ {
+    background: #ff0000;
+}
+
+.our-team .team .person:hover .social-media svg:nth-child(4),
+.contact .icons .social-media svg:nth-child(4) {
+    background: #dd4b39;
+}
+
+.our-team .team .person:hover .social-media svg:hover {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+/* End Our Team */
+
+/* Start Contact */
+.contact{
+    background: url('../img/contact-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 30vh;
+    z-index: 0;
+    color: var(--white);
+    padding: 5%;
+}
+.contact h3 span{
+    color: var(--main-color);
+}
+.contact form{
+    margin: 10% auto;
+}
+.contact form input[type="text"], textarea{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 5px
+}
+.contact form input[type="text"] {
+    margin: 0 2% 5%;;
+    width: 25%;
+    padding: 0.5% 1%;
+}
+.contact form textarea {
+    width: 55%;
+    padding-top: 15%;
+}
+.contact .icons{
+    margin-top: 2%;
+}
+.contact .icons button{
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: .5%;
+    border-radius: 5px;
+    color: var(--white);
+    transition: .5s all ease-in-out;
+}
+.contact .icons button:hover{
+    background-color: var(--main-color);
+}
+/* End Contact */
+
+/* Start Footer */
+footer {
+    background: #3b434c;
+    color: #fff;
+    padding: 1% 0;
+}
+/* End Footer */
