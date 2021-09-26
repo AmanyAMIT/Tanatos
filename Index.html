@@ -17,8 +17,8 @@
         <div class="container">
                 <div class="d-flex justify-content-center justify-content-md-between top-nav align-items-center">
                     <h3 class="col-12 col-md-4 logo mt-3">Tanatos<span class="main-color">Studio</span></h3>
-                    <span class="col-12 col-md-4 d-flex justify-content-lg-around">
-                        <h5 class="d-block">Menu <i class="fas fa-bars"></i></h5>
+                    <span class="col-12 col-md-4 d-flex justify-content-lg-around mobile-btn">
+                        <h5 class="d-block click-menu">Menu <i class="fas fa-bars"></i></h5>
                     </span>
                 </div>
             <div class="introduction text-center">
@@ -42,7 +42,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quo.</p>
             </div>
             <div class="col-12 col-sm-6 col-md-3 box">
-                <div><i class="fas fa-mobile-alt"></i></div>
+                <div><i class="fas fa-mobile" aria-hidden="true"></i></div>
                 <h3 class="text-uppercase fst-normal">app design</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quo.</p>
             </div>
@@ -218,9 +218,22 @@
 </footer>
 <!-- End Footer -->
 
+<!-- Start Sidebar -->
+<aside class="side-menu position-fixed">
+    <ul class="d-flex flex-column justify-content-center">
+        <li><a href="#" class="text-decoration-none">Home</a></li>
+        <li><a href="#" class="text-decoration-none">About</a></li>
+        <li><a href="#" class="text-decoration-none">Service</a></li>
+        <li><a href="#" class="text-decoration-none">Team</a></li>
+        <li><a href="#" class="text-decoration-none">Contact</a></li>
+    </ul>
+</aside>
+
+<div class="overlayMenu position-fixed"></div>
+<!-- End Sidebar -->
+
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
