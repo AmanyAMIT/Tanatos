@@ -26,6 +26,9 @@ body.pushleft{
     margin-right: 25%;
     margin-left: -25%;
 }
+.hide{
+    display: none;
+}
 /* End General Style */
 
 /* Start Header Style */
@@ -199,7 +202,8 @@ a.show-more.order-service:hover
     border: 1px solid #fff;
 }
 
-.our-work .show-more {
+.our-work .show-more,
+.our-work .show-less {
     border: 1px solid #aaa;
     background: #fff;
     color: #666;
@@ -212,7 +216,8 @@ a.show-more.order-service:hover
     transition: all 1s ease-in-out;
 }
 
-.our-work .show-more:hover {
+.our-work .show-more:hover,
+.our-work .show-less:hover {
     border: 1px solid #f7600e;
     background: #f7600e;
     color: #fff;
